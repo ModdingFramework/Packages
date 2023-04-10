@@ -1,5 +1,4 @@
 package("Memory")
-    set_kind("library")
     set_homepage("https://github.com/ModdingFramework/Memory.h")
     set_description("A header-only library for reading/writing memory.")
     add_urls("https://github.com/ModdingFramework/Memory.h.git")
