@@ -4,8 +4,7 @@ package("Memory")
     set_description("A header-only library for reading/writing memory.")
     add_urls("https://github.com/ModdingFramework/Memory.h.git")
 
-    add_deps("Logging")
-    add_deps("StringFormatting")
+    add_deps("Logging", "StringFormatting")
 
     on_install(function (package)
         os.cp("include", package:installdir())
