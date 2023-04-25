@@ -1,4 +1,4 @@
-package("ModdingFramework.EXE")
+package("modding_framework_exe")
     set_homepage("https://github.com/ModdingFramework/modding_framework.exe")
     set_description("A header-only library for creating your own, branded modding framework for your game.")
     add_urls("https://github.com/ModdingFramework/modding_framework.exe.git")
