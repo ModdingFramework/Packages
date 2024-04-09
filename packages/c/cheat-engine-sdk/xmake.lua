@@ -10,10 +10,10 @@ package("cheat-engine-sdk")
 
     on_load(function(package)
         if package:config("includes_lua") then
-            package:add("defines", "CHEATENGINE_USE_LUA=1")
-            package:add("linkdirs", "lib")
+            package:add("defines", "CHEATENGINE_USE_LUA=1", { public = true })
+            package:add("linkdirs", "lib", { public = true })
             local architecture = get_config("arch") or "x64"
-            package:add("links", "lua53-" .. architecture)
+            package:add("links", "lua53-" .. architecture, { public = true })
         end
     end)
 
